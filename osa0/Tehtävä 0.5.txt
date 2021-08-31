@@ -1,0 +1,28 @@
+title Tehtävä 0.5
+
+selain -> palvelin: GET https://studies.cs.helsinki.fi/exampleapp/spa
+palvelin --> selain: HTML-koodi
+
+selain -> palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin --> selain: main.css
+
+selain -> palvelin: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+palvelin --> selain: spa.js
+
+note over selain:
+Selain alkaa suorittaa js-koodia
+ja pyytää JSON-datan palvelimelta
+end note 
+
+selain -> palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin --> selain: [{"content":"again","date":"2021-08-31T13:04:39.597Z"}, ...]
+
+
+note over selain:
+Selain suorittaa tapahtuman käsittelijän
+ja renderöi json datan näytölle
+end note 
+
+
+selain -> palvelin: GET https://studies.cs.helsinki.fi/exampleapp/favicon.ico
+palvelin --> selain: HTML-koodi

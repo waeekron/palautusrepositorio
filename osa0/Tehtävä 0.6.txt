@@ -1,0 +1,8 @@
+title Tehtävä 0.5
+
+selain -> palvelin: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over selain:
+selain suorittaa tapahtumankäsittelijän
+joka renderöi muistiinpanot näytölle
+end note 
+palvelin --> selain: {"message":"note created"}

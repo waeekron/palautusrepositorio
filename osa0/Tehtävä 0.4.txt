@@ -1,0 +1,28 @@
+title Tehtävä 0.4
+
+
+selain -> palvelin: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+selain -> palvelin: GET https://studies.cs.helsinki.fi/exampleapp/notes
+palvelin --> selain: HTML-koodi
+
+selain -> palvelin : GET https://studies.cs.helsinki.fi/exampleapp/main.js
+palvelin --> selain: main.js
+
+note over selain: 
+selain alkaa suorittaa js-koodia
+joka pyytää json datan palvelimelta
+end note
+
+selain -> palvelin : GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin --> selain: main.css
+selain -> palvelin : GET https://studies.cs.helsinki.fi/favicon.ico
+palvelin --> selain: html-koodia
+
+selain -> palvelin : GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin --> selain: [{"content":"Note","date":"2021-08-31T12:39:37.238Z"} ...]
+
+note over selain:
+selain suorittaa tapahtumankäsittelijän
+joka renderöi muistiinpanot näytölle
+end note 
