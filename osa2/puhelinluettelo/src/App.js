@@ -90,6 +90,14 @@ const App = () => {
           setErrorMessage(`Added ${personObject.name}`)
           
         })
+        .catch(error => {
+          if(error.response.data) {
+            console.log(error.response.data)
+            setSucces(false)
+            setErrorMessage(parseError(error.response.data))
+          }
+          
+        })
         setTimeout(() => {
           setErrorMessage(null)
           setSucces(false)
@@ -97,6 +105,10 @@ const App = () => {
         
   }
 
+  const parseError = msg => {
+    let parts = msg.split('ValidationError:')
+    return parts[1].split('<br>')[0]
+  }
 
   const search = (event) => {
     if (event.target.value.trim() === '') {
