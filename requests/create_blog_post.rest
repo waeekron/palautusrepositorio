@@ -1,9 +1,10 @@
 POST http://localhost:3003/api/blogs/
-Content-Type: application/json 
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhlcnJhV2FsdGVyIiwiaWQiOiI2MjJlNWJkOWEzYzE1YjhkNWIyMDcwNzMiLCJpYXQiOjE2NDc1NTEzOTl9.hpeLWesh6pjynzPAePO6aUY8iKUfMLLjtBapxsYtu_0
 
 {
-    "title": "Otsikko",
-    "author": "Walter Kronqvist",
-    "url": "url",
-    "likes": 0
+    "title":"kissan päivät",
+    "author":"Walter Kronqvffffist43",
+    "url":"www.google.c00om",
+    "likes": 100
 }
